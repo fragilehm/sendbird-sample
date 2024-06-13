@@ -13,7 +13,7 @@ function App() {
     )
   }
   return (
-    <SBProvider appId={APP_ID} userId={window?.sendbirdChatVariables?.userId || "sendbirdian-200720"} >
+    <SBProvider appId={APP_ID} userId={window?.sendbirdChatVariables?.userId} >
       <CustomizedApp />
     </SBProvider>
   )
