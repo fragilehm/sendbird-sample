@@ -8,7 +8,7 @@ export default function CustomizedApp() {
       <div className="sendbird-app__wrap">
         <div className="sendbird-app__conversation-wrap">
           <SBConversation
-            channelUrl={window?.sendbirdChatVariables?.channelUrl}
+            channelUrl={"sendbird_group_channel_29484954_207b796608cb959bb040ac0658854639c86ac538"}
             onChatHeaderActionClick={() => {
               setShowSettings(true);
             }}
