@@ -7,32 +7,33 @@ import SBChannelSettings from '@sendbird/uikit-react/ChannelSettings'
 export default function CustomizedApp() {
   // useState
   const [showSettings, setShowSettings] = useState(false)
-  // const [currentChannelUrl, setCurrentChannelUrl] = useState("")
+  const [currentChannelUrl, setCurrentChannelUrl] = useState("")
 
   return (
     <div className="customized-app">
       <div className="sendbird-app__wrap">
-        {/* <div className="sendbird-app__channellist-wrap">
+        <div className="sendbird-app__channellist-wrap">
           <SBChannelList
             selectedChannelUrl={currentChannelUrl}
             onChannelCreated={(channel) => {
               setCurrentChannelUrl(channel.url)
             }}
+            disableAutoSelect
             onChannelSelect={(channel) => {
               setCurrentChannelUrl(channel?.url)
             }}
           />
-        </div> */}
+        </div>
         <div className="sendbird-app__conversation-wrap">
           <SBConversation
-            channelUrl={window?.sendbirdChatVariables?.channelUrl}
+            channelUrl={currentChannelUrl}
             onChatHeaderActionClick={() => {
               setShowSettings(true)
             }}
           />
         </div>
       </div>
-      {/* {showSettings && (
+      {showSettings && (
         <div className="sendbird-app__settingspanel-wrap">
           <SBChannelSettings
             channelUrl={currentChannelUrl}
@@ -41,7 +42,7 @@ export default function CustomizedApp() {
             }}
           />
         </div>
-      )} */}
+      )}
     </div>
   )
 }
