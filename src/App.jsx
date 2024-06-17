@@ -12,8 +12,10 @@ function App() {
       <p>Set APP_ID in const.js</p>
     )
   }
+  console.log('🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨 window?.sendbirdChatVariables', window?.sendbirdChatVariables);
+  
   return (
-    <SBProvider appId={APP_ID} userId={USER_ID} nickname={NICKNAME}>
+    <SBProvider appId={APP_ID} userId={window?.sendbirdChatVariables?.userId} nickname={NICKNAME}>
       <CustomizedApp />
     </SBProvider>
   )
