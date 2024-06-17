@@ -7,7 +7,7 @@ import SBChannelSettings from '@sendbird/uikit-react/ChannelSettings'
 export default function CustomizedApp() {
   // useState
   const [showSettings, setShowSettings] = useState(false)
-  const [currentChannelUrl, setCurrentChannelUrl] = useState("")
+  const [currentChannelUrl, setCurrentChannelUrl] = useState(window?.sendbirdChatVariables?.channelUrl)
 
   return (
     <div className="customized-app">
