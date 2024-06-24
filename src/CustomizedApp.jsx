@@ -12,7 +12,9 @@ export default function CustomizedApp() {
   return (
     <div className="customized-app">
       <div className="sendbird-app__wrap">
-        <div className="sendbird-app__channellist-wrap">
+        <div className="sendbird-app__channellist-wrap" style={{
+          width: "0px"
+        }}>
           <SBChannelList
             selectedChannelUrl={currentChannelUrl}
             onChannelCreated={(channel) => {
