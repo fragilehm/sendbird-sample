@@ -4,10 +4,8 @@
 export const APP_ID = "360FA073-B471-4BFD-BFCE-44FA8060DF23";
 // set your own USER_ID and NICKNAME
 export const USER_ID = "2_TESTQA_4c9a5dbc5ea2c8d497102df1086fa831";
-export const NICKNAME = "Sendbirdian84";
 
 export default {
   APP_ID,
   USER_ID,
-  NICKNAME,
 };
